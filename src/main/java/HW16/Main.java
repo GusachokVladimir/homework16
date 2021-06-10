@@ -20,14 +20,14 @@ public class Main {
         By transport = By.xpath("(//a[text()='Транспорт'])[1]");
         By rabota2 = By.xpath("(//a[text()='Работа'])[2]");
 
+        String URL = "https://www.avito.ru/rossiya";
+
 
         System.setProperty("webdriver.chrome.driver", "E:\\Automation Test\\Soft\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
 
         try {
-            String URL = "https://www.avito.ru/rossiya";
-
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
             driver.get(URL);
