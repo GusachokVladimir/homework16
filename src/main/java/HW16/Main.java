@@ -34,7 +34,6 @@ public class Main {
 
             WebElement autoElement = (new WebDriverWait(driver, Duration.ofSeconds(5))
                     .until(ExpectedConditions.presenceOfElementLocated(auto)));
-            //WebElement autoElement = driver.findElement(auto);
             String autoPar = autoElement.getAttribute("pathname");
             System.out.println(autoPar);
 
