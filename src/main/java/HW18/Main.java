@@ -18,11 +18,14 @@ public class Main {
         driver.get(URL);
 
         DragNDrop dragNDrop = new DragNDrop();
-        dragNDrop.task1(driver);
-        dragNDrop.task2(driver);
-        dragNDrop.task3(driver);
-        dragNDrop.task4(driver);
-        dragNDrop.pageDown(driver);
 
+        try {
+            dragNDrop.task1(driver);
+            dragNDrop.task2(driver);
+            dragNDrop.task3(driver);
+            dragNDrop.task4(driver);
+        } finally {
+            dragNDrop.pageDown(driver);
+        }
     }
 }

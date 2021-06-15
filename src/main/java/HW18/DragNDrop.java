@@ -28,7 +28,6 @@ public class DragNDrop {
 
         Thread.sleep(2000);
         driver.navigate().refresh();
-
     }
 
     //Реализовать действие по перетягиванию элемента с задержкой в 2 секунды
@@ -71,7 +70,6 @@ public class DragNDrop {
 
         Thread.sleep(2000);
         driver.navigate().refresh();
-
     }
 
     //Реализовать действие по перетягиванию элемента, через смещение по осям
@@ -88,7 +86,6 @@ public class DragNDrop {
                 .perform();
 
         Thread.sleep(2000);
-
     }
 
     public void pageDown(WebDriver driver) {
